@@ -1,0 +1,384 @@
+/* add vendor icon */
+.add-btn{
+  padding: 10px;
+  margin: 20px;
+  text-align: right;
+}
+
+h1{
+    text-align: center;
+}
+
+.add{
+    width: 100px;
+    height: 30px;
+    color:white;
+    border: 1px solid  #3987b8; 
+    background-color: #3987b8; 
+    font-weight: bolder;
+    border-radius: 7px;   
+}
+
+.add:hover{
+    background-color: white;
+    border: 1px solid  #3987b8; 
+    color:  #3987b8;
+    
+}
+
+/* removeOverlay */
+.deleteOverlay{
+    display:none;
+    position: fixed;
+    margin: auto;
+    width:100%;
+    height: auto;
+    z-index: 3;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-top:300px;
+  }
+
+  .popup button {
+    margin: 5px;
+  }
+
+  /* .close{
+    width: 40px;
+    height: 40px;
+    text-align: right;
+    float: right;
+    position: fixed;
+    position: relative;
+    left: 31px;
+    bottom: 111px;
+    box-shadow: 0 0 10px rgba(244, 78, 78, 0.716);
+    border-radius: 50%;
+    transform: 0.4s;
+    transform: translateZ(0);
+  }
+  .close:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+  } */
+  #confirmDelete, #confirmMultiDelete{
+    margin: auto;
+    border: 1px solid #3987b8;
+    background-color: #3987b8;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    transform: translateZ(0);
+    position: relative;
+    bottom: 8px;
+    left: 14px;
+}
+#confirmDelete:hover, #confirmMultiDelete:hover{
+    border-radius: 7px;
+    background: #d05427;
+    background-color: #d05427;
+    transform: scale(1.08); 
+}
+/*  */
+
+
+
+/* overlay */
+
+#form-overlay{
+    
+    display: none;
+    position: fixed;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  
+/* vendor registration form */
+.form-container {
+    background-color: white;
+    padding: 10px;
+    margin-left: 450px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin-top: 45px;
+    /* display: none; */
+}
+
+#update_title{
+    display: none;
+}
+
+label{
+    text-align: left;
+}
+
+.form-container:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(253, 253, 253, 0.8);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-table  {
+    width: 100%;
+    margin: auto;
+    border-spacing: 10px;
+}
+
+fieldset{
+   border-color:rgba(255, 255, 255, 0.97);
+   text-align: left;
+   border-radius: 5px;
+   font-weight: bolder;
+}
+
+.form-table td {
+    padding: 9px;
+    padding-right: 5px;
+}
+
+.form-table label {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-table input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.move{
+   position: relative;
+   left:17px; 
+}
+
+.submit-btn {
+    display: inline-block;
+    margin: auto;
+    border: 1px solid #3987b8;
+    background-color: #3987b8;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    transform: translateZ(0); 
+}
+
+.submit-btn:hover {
+    border-radius: 7px;
+    background: #3987b8;
+    transform: scale(1.05); 
+}
+
+#update-button{
+    display: none;
+    position: relative;
+    left:60px;
+}
+
+#submit-button{
+   position: relative;
+   left:60px;
+}
+
+#delete{
+ position: relative;
+ right:60px;
+}
+
+/* table list */
+#ven_table{
+    border-collapse: collapse;
+    margin-top: 30px;
+    overflow: scroll;
+}
+
+#tableBody td,th{
+    text-align: center;
+    padding: 10px;
+}
+
+#tableBody tr:nth-child(odd) {
+    background-color: #82828230;
+    color:black;
+}
+
+#tableBody tr:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    height: 700px;
+}
+
+#ven_table td button:hover{
+    color: black;
+}
+
+.add-vendor{
+font-size: 40px;
+    color: rgb(1, 1, 1); 
+    cursor: pointer; 
+    margin-right: 25px;
+    position: relative;
+    bottom: 7px;
+}
+.trash-icon {
+    font-size: 40px;
+    color: rgb(113, 34, 34); 
+    cursor: pointer; 
+    margin-right: 10px;
+    position: relative;
+    bottom: 7px;
+}
+
+.disabled {
+    opacity: 0.5; 
+    pointer-events: none; 
+}
+
+.delete,.update{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    top:5px;   
+}
+
+.delete:hover,.update:hover{ 
+    cursor: pointer;
+}
+
+/* form validation */
+@keyframes blink {
+    0% { border-color: red; }
+    50% { border-color: red; }
+    100% { border-color: red; }
+  }
+  
+  .blinking-border {
+    animation: blink 2s infinite;
+    border-width: 3px;
+    border-color: red;
+    border-style: solid;
+  }
+
+/* ends */
+
+/* select & delete buttons */
+.buttons{ 
+   
+    position: absolute;
+    top:93px;
+    left: 38px;
+    /* margin-right: 32px;  */
+}
+.buttons button{
+    width:150px;
+}
+
+.select-btn{
+display: inline-block;
+/* margin: auto; */
+border: 1px solid #113d05;
+background-color: #113d05;
+font-size: 18px;
+color: white;
+font-weight: bolder;
+padding: 10px 25px;
+cursor: pointer;
+transition: 0.3s;
+border-radius: 5px;
+/* margin-right: 20px; */
+transform: translateZ(0); 
+}
+
+.select-btn:hover {
+border-radius: 7px;
+background:#113d05;
+transform: scale(1.05); 
+}
+
+#tableBody .selected {
+    background-color: #e0e0e0;
+  }
+#selectAllCheckbox{
+    width:20px;
+    height: 20px;
+
+}
+#deselect{
+    display: none;
+}
+
+.update-icon {
+    font-size: 24px;
+    color: blue; 
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+  .delete-icon {
+    font-size: 24px; 
+    color: rgb(103, 39, 39); 
+    cursor: pointer; 
+  }
+
+.cancel-icon {
+    position: relative;
+    left: 212px;
+    bottom: 85px;
+    font-size: 30px;
+    /* background-color: rgb(239, 239, 239); */
+    padding: 5px;
+    border-radius: 7px;
+    color: red;
+    cursor: pointer;  
+    transform: translateZ(0);     
+}
+.cancel-icon:hover{
+    transform: scale(1.10);
+}
+
+/*  */
